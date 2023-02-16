@@ -1,0 +1,29 @@
+<html>
+<title>js2</title>
+<script>
+function validateForm()
+{
+var x = document.js2.mobilenumber.value;
+if (x=="" || isNaN(x)|| x.length>10 || x.length<10)
+{
+alert("Please enter the Mobile Number properly");
+document.js2.mobilenumber.focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validateForm()" method="post" action="js2.html"
+name="js2"><br>
+<br>
+<label>Mobile Number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input
+name="mobilenumber"><br>
+<br>
+<input name="Submit" value="Submit" type="submit"><br>
+<br>
+<br>
+<br>
+</form>
+</body>
+</html>
