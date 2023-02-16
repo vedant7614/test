@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>script</title>
+
+  
+
+
+
+
+  <script>
+function validateForm()
+{
+var x=document.script.name.value;
+var y=document.script.pincode.value;
+if (x==null || x=="")
+{
+alert("Please enter the Name");
+document.script.name.focus();
+return false;
+}
+if (y=="")
+{
+alert("Please enter the pincode properly");
+document.script.pincode.focus();
+return false;
+}
+if(isNaN(y))
+{
+alert("Please enter a number");
+document.script.pincode.focus();
+return false;
+}
+if(y.length>6 || y.length<6)
+{
+alert("Please enter six digits");
+document.script.pincode.focus();
+return false;
+}
+}
+  </script>
+</head><body>
+<form method="get" action="script.html" name="script">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input name="name"><br>
+  <br>
+PINCODE&nbsp; <input name="pin"><br>
+  <br>
+  <input name="submit" value="submit" type="submit"><br>
+</form>
+
+</body></html>
